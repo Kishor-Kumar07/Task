@@ -1,0 +1,14 @@
+Logic for the seating arrangement problem
+
+The blocks of the airplane is taken as individual arrays
+In the input [[3,4],[2,3]]
+The second elements 4 & 3 are considered as the row and 3 & 2 as the columns
+A loop - while i<31 where i=1
+For the first array consider the -1 index and if the index is empty fill it with the value i+1
+In the subsequent arrays fill the 0 & -1 indices with i+1 
+And for the last array the index 0 alone is filled with i+1
+Once all the aisle seats are filled,set a variable to true 
+if this one becomes true,then the first array's 0th index is filled with i+1
+then the last one's index is filled with i+1
+If all the arrays with these indices are filled then set a variable to true
+Once this happens then the center ones are filled by having a loop
